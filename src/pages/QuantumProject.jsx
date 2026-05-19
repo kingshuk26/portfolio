@@ -6,12 +6,26 @@ export default function QuantumProject() {
   return (
     <div className="min-h-screen bg-[#081c15] text-[#d8f3dc] overflow-x-hidden">
 
+      {/* Back nav */}
+      <nav className="sticky top-0 z-50 backdrop-blur-xl border-b border-[#2d6a4f]/40 bg-[#081c15]/80">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center gap-6">
+          <a
+            href="/"
+            className="text-[#74c69d] text-sm hover:text-[#b7e4c7] transition flex items-center gap-2"
+          >
+            ← Back
+          </a>
+          <span className="text-[#2d6a4f]">/</span>
+          <span className="text-[#b7e4c7] text-sm">Quantum Atom Engine</span>
+        </div>
+      </nav>
+
       {/* HERO */}
       <section className="px-6 py-24 border-b border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
           <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-6">
-            Quantum Simulation Engine
+            Scientific Computing · TypeScript
           </p>
 
           <h1 className="text-6xl lg:text-7xl font-black leading-tight max-w-6xl">
@@ -20,58 +34,43 @@ export default function QuantumProject() {
             Engine
           </h1>
 
-          <p className="mt-10 text-xl text-[#b7e4c7] max-w-4xl leading-loose">
-            Browser-based quantum simulation engine that numerically
-            solves radial Kohn–Sham equations using Self-Consistent
-            Field (SCF) methods and visualizes electron density
-            behavior in real time using interactive scientific
-            visualizations.
+          <p className="mt-10 text-xl text-[#b7e4c7] max-w-3xl leading-loose">
+            A browser-based tool that numerically solves radial Kohn–Sham equations
+            using SCF iteration and renders electron density behavior in real time.
+            Built to make quantum mechanics explorable, not just computable.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-5 mt-14">
-
+          {/* Stat cards */}
+          <div className="grid grid-cols-3 gap-5 mt-14 max-w-2xl">
             <div className="p-6 rounded-3xl bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <p className="text-[#95d5b2] text-sm mb-3">
-                Numerical Method
-              </p>
-
-              <h3 className="text-4xl font-black text-[#74c69d]">
-                SCF
-              </h3>
-
-              <p className="text-sm text-[#b7e4c7] mt-3">
-                Self-Consistent Field Iteration
-              </p>
+              <p className="text-[#95d5b2] text-xs uppercase tracking-[2px] mb-3">Method</p>
+              <h3 className="text-4xl font-black text-[#74c69d]">SCF</h3>
+              <p className="text-sm text-[#b7e4c7] mt-2">Self-Consistent Field</p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <p className="text-[#95d5b2] text-sm mb-3">
-                Theory
-              </p>
-
-              <h3 className="text-4xl font-black text-[#74c69d]">
-                DFT
-              </h3>
-
-              <p className="text-sm text-[#b7e4c7] mt-3">
-                Density Functional Theory
-              </p>
+              <p className="text-[#95d5b2] text-xs uppercase tracking-[2px] mb-3">Theory</p>
+              <h3 className="text-4xl font-black text-[#74c69d]">DFT</h3>
+              <p className="text-sm text-[#b7e4c7] mt-2">Density Functional</p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <p className="text-[#95d5b2] text-sm mb-3">
-                Visualization
-              </p>
-
-              <h3 className="text-4xl font-black text-[#74c69d]">
-                Real-Time
-              </h3>
-
-              <p className="text-sm text-[#b7e4c7] mt-3">
-                Electron Density Rendering
-              </p>
+              <p className="text-[#95d5b2] text-xs uppercase tracking-[2px] mb-3">Rendering</p>
+              <h3 className="text-3xl font-black text-[#74c69d]">Live</h3>
+              <p className="text-sm text-[#b7e4c7] mt-2">Real-time in browser</p>
             </div>
+          </div>
 
+          {/* GitHub link */}
+          <div className="mt-10">
+            <a
+              href="https://github.com/kingshuk26/quantum-atom-engine"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block px-8 py-4 rounded-2xl bg-[#52b788] text-[#081c15] font-semibold hover:scale-105 transition"
+            >
+              View on GitHub →
+            </a>
           </div>
         </div>
       </section>
@@ -80,47 +79,38 @@ export default function QuantumProject() {
       <section className="px-6 py-24">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Project Overview
-            </p>
-
-            <h2 className="text-5xl font-bold">
-              Interactive Quantum Learning System
-            </h2>
-          </div>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Overview</p>
+          <h2 className="text-5xl font-bold mb-14">What this project does</h2>
 
           <div className="grid lg:grid-cols-2 gap-10">
 
             <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <h3 className="text-3xl font-bold mb-6">
-                Core Objective
-              </h3>
-
+              <h3 className="text-2xl font-bold mb-5">The idea</h3>
               <p className="text-[#b7e4c7] leading-loose text-lg">
-                Most quantum chemistry software behaves like a
-                black box where users only see final outputs.
-                This engine focuses on making quantum mechanics
-                visually understandable by allowing users to
-                observe SCF convergence behavior, electron density,
-                orbital energy changes, and numerical instability
-                directly inside the browser.
+                Most quantum chemistry software is a black box — you put in inputs, it gives
+                you outputs. This project tries to open that up. You can watch SCF convergence
+                happen step by step, see how electron density shifts, and observe what happens
+                when the system diverges instead of converges. It's more of a learning tool
+                than a production simulator.
               </p>
             </div>
 
             <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <h3 className="text-3xl font-bold mb-6">
-                Core Concepts
-              </h3>
-
-              <ul className="space-y-4 text-[#b7e4c7] text-lg">
-                <li>• Self-Consistent Field (SCF) Iteration</li>
-                <li>• Radial Kohn–Sham Equations</li>
-                <li>• Density Functional Theory (DFT)</li>
-                <li>• Local Density Approximation (LDA)</li>
-                <li>• Electron Density Visualization</li>
-                <li>• Hartree Potentials</li>
-                <li>• Exchange-Correlation Potentials</li>
+              <h3 className="text-2xl font-bold mb-5">Concepts involved</h3>
+              <ul className="space-y-3 text-[#b7e4c7] text-base leading-relaxed">
+                {[
+                  "Self-Consistent Field (SCF) iteration",
+                  "Radial Kohn–Sham equations",
+                  "Density Functional Theory (DFT)",
+                  "Local Density Approximation (LDA)",
+                  "Electron density visualization",
+                  "Hartree & exchange-correlation potentials",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-[#74c69d] mt-1">→</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -132,34 +122,17 @@ export default function QuantumProject() {
       <section className="px-6 py-24 border-t border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Simulation Interface
-            </p>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Interface</p>
+          <h2 className="text-5xl font-bold mb-14">Visualizations</h2>
 
-            <h2 className="text-5xl font-bold">
-              Quantum Visualizations
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-
+          {/* Top two */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-8">
             {[
-              {
-                title: "3D Electron Density Visualization",
-                img: atom3dImg,
-              },
-              {
-                title: "Mathematical Theory Panel",
-                img: mathPanelImg,
-              },
-              {
-                title: "Orbital Energy Level Analysis",
-                img: levelsImg,
-              },
-            ].map((item, i) => (
+              { title: "3D Electron Density", img: atom3dImg },
+              { title: "Mathematical Theory Panel", img: mathPanelImg },
+            ].map((item) => (
               <div
-                key={i}
+                key={item.title}
                 className="group rounded-[2rem] overflow-hidden border border-[#2d6a4f] bg-[#1b4332]/30 hover:border-[#52b788] transition-all duration-500"
               >
                 <div className="overflow-hidden">
@@ -169,15 +142,25 @@ export default function QuantumProject() {
                     className="w-full group-hover:scale-105 transition duration-700"
                   />
                 </div>
-
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl font-bold">{item.title}</h3>
                 </div>
               </div>
             ))}
+          </div>
 
+          {/* Full width third */}
+          <div className="group rounded-[2rem] overflow-hidden border border-[#2d6a4f] bg-[#1b4332]/30 hover:border-[#52b788] transition-all duration-500">
+            <div className="overflow-hidden">
+              <img
+                src={levelsImg}
+                alt="Orbital Energy Level Analysis"
+                className="w-full group-hover:scale-105 transition duration-700"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold">Orbital Energy Level Analysis</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -186,51 +169,30 @@ export default function QuantumProject() {
       <section className="px-6 py-24 border-t border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Mathematical Foundation
-            </p>
-
-            <h2 className="text-5xl font-bold">
-              Quantum Numerical Framework
-            </h2>
-          </div>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Theory</p>
+          <h2 className="text-5xl font-bold mb-14">The math behind it</h2>
 
           <div className="grid lg:grid-cols-2 gap-8">
 
             <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <h3 className="text-3xl font-bold mb-6">
-                Electron Density
-              </h3>
-
-              <div className="bg-[#081c15] p-6 rounded-2xl border border-[#2d6a4f]">
-                <p className="text-3xl text-[#74c69d] font-bold">
-                  ρ(r) = |ψ(r)|²
-                </p>
+              <h3 className="text-2xl font-bold mb-6">Electron Density</h3>
+              <div className="bg-[#081c15] p-6 rounded-2xl border border-[#2d6a4f] mb-6">
+                <p className="text-3xl text-[#74c69d] font-bold font-mono">ρ(r) = |ψ(r)|²</p>
               </div>
-
-              <p className="text-[#b7e4c7] leading-loose text-lg mt-6">
-                Electron density distribution is visualized
-                dynamically to help understand how electrons
-                spatially distribute around atomic nuclei.
+              <p className="text-[#b7e4c7] leading-loose">
+                Electron density distribution — how electrons are spatially distributed
+                around the nucleus — is rendered dynamically as SCF iterations progress.
               </p>
             </div>
 
             <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
-              <h3 className="text-3xl font-bold mb-6">
-                Kohn–Sham Framework
-              </h3>
-
-              <div className="bg-[#081c15] p-6 rounded-2xl border border-[#2d6a4f]">
-                <p className="text-2xl text-[#74c69d] font-bold">
-                  [-∇² + Veff(r)]ψ = εψ
-                </p>
+              <h3 className="text-2xl font-bold mb-6">Kohn–Sham Equation</h3>
+              <div className="bg-[#081c15] p-6 rounded-2xl border border-[#2d6a4f] mb-6">
+                <p className="text-2xl text-[#74c69d] font-bold font-mono">[-∇² + Veff(r)]ψ = εψ</p>
               </div>
-
-              <p className="text-[#b7e4c7] leading-loose text-lg mt-6">
-                The engine numerically solves radial
-                Kohn–Sham equations using finite-difference
-                approximations and iterative SCF updates.
+              <p className="text-[#b7e4c7] leading-loose">
+                Solved numerically using finite-difference approximations, with iterative
+                SCF updates until the electron density converges (or doesn't).
               </p>
             </div>
 
@@ -238,59 +200,39 @@ export default function QuantumProject() {
         </div>
       </section>
 
-      {/* CURRENT STATUS */}
+      {/* STATUS — honest section, keep it */}
       <section className="px-6 py-24 border-t border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Development Status
-            </p>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Status</p>
+          <h2 className="text-5xl font-bold mb-14">Work in progress</h2>
 
-            <h2 className="text-5xl font-bold">
-              Active Numerical Research
-            </h2>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-8">
 
-          <div className="p-10 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
-
-            <div className="mb-10">
-              <h3 className="text-3xl font-bold mb-6 text-[#74c69d]">
-                Current Challenges
-              </h3>
-
-              <ul className="space-y-4 text-[#b7e4c7] text-lg">
-                <li>
-                  • SCF convergence stability is still under active development
-                </li>
-
-                <li>
-                  • Numerical damping and mixing optimization are in progress
-                </li>
-
-                <li>
-                  • Some atomic configurations may fail to converge
-                </li>
-
-                <li>
-                  • Energy values are currently qualitative
-                  rather than fully physically accurate
-                </li>
+            <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
+              <h3 className="text-2xl font-bold mb-5 text-[#74c69d]">Known limitations</h3>
+              <ul className="space-y-3 text-[#b7e4c7] text-base leading-relaxed">
+                {[
+                  "SCF convergence stability is still being worked on",
+                  "Numerical damping and mixing need more tuning",
+                  "Some atomic configurations don't converge yet",
+                  "Energy values are qualitative, not fully physically accurate",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-[#74c69d] mt-1">→</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-3xl font-bold mb-6 text-[#74c69d]">
-                Why This Matters
-              </h3>
-
-              <p className="text-[#b7e4c7] leading-loose text-lg">
-                Instead of hiding convergence failures,
-                this engine intentionally exposes instability
-                behavior so users can understand how iterative
-                quantum systems evolve, diverge, or stabilize.
-                The project prioritizes learning and visualization
-                over black-box computation.
+            <div className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
+              <h3 className="text-2xl font-bold mb-5 text-[#74c69d]">Why show this anyway</h3>
+              <p className="text-[#b7e4c7] leading-loose">
+                The convergence failures are part of the point. Instead of hiding instability,
+                the engine exposes it — so you can actually see how iterative quantum systems
+                evolve, diverge, or settle. It's a learning tool first, not a production
+                physics solver.
               </p>
             </div>
 
@@ -302,34 +244,24 @@ export default function QuantumProject() {
       <section className="px-6 py-24 border-t border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Scientific Applications
-            </p>
-
-            <h2 className="text-5xl font-bold">
-              Educational Use Cases
-            </h2>
-          </div>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Use cases</p>
+          <h2 className="text-5xl font-bold mb-14">What you can explore</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
             {[
-              "Visualizing Hydrogen-like Atoms",
-              "Exploring Nuclear Charge Effects",
-              "Understanding SCF Convergence",
-              "Studying Ionic Charge Behavior",
-            ].map((item, i) => (
+              { title: "Hydrogen-like Atoms",    desc: "Visualize single-electron orbital behavior" },
+              { title: "Nuclear Charge Effects", desc: "See how Z affects electron distribution" },
+              { title: "SCF Convergence",        desc: "Watch iterations stabilize or diverge" },
+              { title: "Ionic Charge Behavior",  desc: "Explore charged atom configurations" },
+            ].map((item) => (
               <div
-                key={i}
+                key={item.title}
                 className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]"
               >
-                <h3 className="text-2xl font-bold leading-relaxed">
-                  {item}
-                </h3>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-[#b7e4c7] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
-
           </div>
         </div>
       </section>
@@ -338,50 +270,28 @@ export default function QuantumProject() {
       <section className="px-6 py-24 border-t border-[#1b4332]">
         <div className="max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">
-              Technology Stack
-            </p>
-
-            <h2 className="text-5xl font-bold">
-              Scientific Computing Stack
-            </h2>
-          </div>
+          <p className="uppercase tracking-[4px] text-[#74c69d] text-sm mb-4">Stack</p>
+          <h2 className="text-5xl font-bold mb-14">Built with</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
             {[
-              {
-                title: "Frontend",
-                tech: "React + TypeScript",
-              },
-              {
-                title: "Visualization",
-                tech: "Three.js + WebGL",
-              },
-              {
-                title: "Numerical Methods",
-                tech: "Finite Difference + SCF",
-              },
-              {
-                title: "Physics",
-                tech: "DFT + Kohn–Sham Theory",
-              },
-            ].map((item, i) => (
+              { label: "Frontend",          tech: "React · TypeScript" },
+              { label: "3D Rendering",      tech: "Three.js · WebGL"   },
+              { label: "Numerics",          tech: "Finite Difference · SCF iteration" },
+              { label: "Physics",           tech: "DFT · Kohn–Sham · LDA" },
+            ].map((item) => (
               <div
-                key={i}
+                key={item.label}
                 className="p-8 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]"
               >
-                <p className="text-[#74c69d] text-sm uppercase tracking-[3px] mb-4">
-                  {item.title}
+                <p className="text-[#74c69d] text-xs uppercase tracking-[3px] mb-4">
+                  {item.label}
                 </p>
-
-                <h3 className="text-2xl font-bold leading-relaxed">
+                <h3 className="text-xl font-bold leading-relaxed text-[#d8f3dc]">
                   {item.tech}
                 </h3>
               </div>
             ))}
-
           </div>
         </div>
       </section>
