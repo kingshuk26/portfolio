@@ -289,7 +289,7 @@ export default function Home() {
               <div className="p-6 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
                 <p className="text-[#74c69d] text-xs uppercase tracking-[3px] mb-4">Stats</p>
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=kingshuk26&theme=dark&hide_border=true&include_all_commits=false&count_private=false&bg_color=0b241c&title_color=74c69d&text_color=b7e4c7&icon_color=52b788"
+                  src="https://github-readme-stats.vercel.app/api?username=Kingshuk26&show_icons=true&theme=transparent&hide_border=true&title_color=74c69d&text_color=b7e4c7&icon_color=52b788"
                   alt="Kingshuk's GitHub Stats"
                   className="w-full rounded-xl"
                   loading="lazy"
@@ -299,7 +299,7 @@ export default function Home() {
               <div className="p-6 rounded-[2rem] bg-[#1b4332]/40 border border-[#2d6a4f]">
                 <p className="text-[#74c69d] text-xs uppercase tracking-[3px] mb-4">Top Languages</p>
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=kingshuk26&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact&bg_color=0b241c&title_color=74c69d&text_color=b7e4c7"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingshuk26&layout=compact&theme=transparent&hide_border=true&title_color=74c69d&text_color=b7e4c7"
                   alt="Top Languages"
                   className="w-full rounded-xl"
                   loading="lazy"
