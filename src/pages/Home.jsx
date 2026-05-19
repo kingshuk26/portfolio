@@ -199,12 +199,14 @@ export default function Home() {
                 title: 'Credit Risk Analytics Dashboard',
                 desc: 'ML dashboard that runs over 300K loan records to predict defaults. Built Logistic Regression and XGBoost models (AUC 0.75), added K-Means risk segmentation, SHAP explainability, and a multi-page Streamlit interface with SQL querying.',
                 github: 'https://github.com/kingshuk26/credit-risk-xai-system',
+                details: '/projects/xai-system',
                 tech: ['Python', 'XGBoost', 'SHAP', 'Streamlit', 'SQLite', 'K-Means'],
               },
               {
                 title: 'CKD Stage Prediction & Treatment AI',
                 desc: 'Healthcare model for Chronic Kidney Disease stage prediction using a stacking ensemble of CatBoost, XGBoost, and LightGBM. 96.8% accuracy, AUC-ROC of 0.987. Includes SHAP-based explanations and a clinical intelligence pipeline.',
                 github: 'https://github.com/kingshuk26/CKD-Stage-Prediction-and-Treatment-AI',
+                details: '/projects/ckd-ai',
                 tech: ['Python', 'CatBoost', 'XGBoost', 'LightGBM', 'SHAP', 'Flask'],
               },
               {
@@ -217,6 +219,7 @@ export default function Home() {
                 title: 'Quantum Atom Engine',
                 desc: 'Interactive browser tool that numerically solves radial Kohn–Sham equations using Self-Consistent Field (SCF) methods. Visualizes electron density, orbital energy levels, and convergence behavior in real time.',
                 github: 'https://github.com/kingshuk26/quantum-atom-engine',
+                details: '/projects/quantum-engine',
                 tech: ['TypeScript', 'DFT', 'SCF', 'Scientific Computing'],
               },
             ].map((project) => (
@@ -258,6 +261,14 @@ export default function Home() {
                     >
                       View on GitHub
                     </a>
+                    {project.details && (
+                      <a
+                        href={project.details}
+                        className="px-6 py-3 rounded-2xl border border-[#52b788] text-[#b7e4c7] font-semibold hover:bg-[#1b4332] transition text-sm"
+                        >
+                          Project Details
+                        </a>
+                     )}    
                   </div>
                 </div>
               </div>
